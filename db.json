@@ -1,0 +1,51 @@
+{
+  "blogs": [
+    {
+      "id": 3,
+      "title": "The Future of Remote Work",
+      "category": [
+        "CAREER",
+        "PRODUCTIVITY"
+      ],
+      "description": "How distributed teams are changing the global workforce landscape and what it means for your career.",
+      "date": "2026-01-20T09:15:00.000Z",
+      "coverImage": "https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg",
+      "content": "Remote work has evolved from a temporary necessity to a permanent fixture in the modern economy. Companies are realizing that talent isn't restricted by geography.\n\nHowever, this shift brings challenges. Communication becomes asynchronous, and building culture requires intentional effort. Tools like Slack, Zoom, and Notion are no longer just utilities but the virtual office itself.\n\nFor employees, the key to success lies in self-discipline and effective time management. The boundary between work and life can blur, making it essential to establish clear routines."
+    },
+    {
+      "id": 4,
+      "title": "Sustainable Living Tips",
+      "category": [
+        "LIFESTYLE",
+        "ENVIRONMENT"
+      ],
+      "description": "Simple changes you can make today for a greener tomorrow without sacrificing comfort.",
+      "date": "2026-01-18T14:30:00.000Z",
+      "coverImage": "https://images.pexels.com/photos/305821/pexels-photo-305821.jpeg",
+      "content": "Living sustainably doesn't mean living off the grid. It starts with small, conscious choices. \n\n1. **Reduce Single-Use Plastics**: Carry a reusable water bottle and shopping bags.\n2. **Eat Local**: Buying local produce reduces carbon emissions from transportation.\n3. **Energy Efficiency**: Switch to LED bulbs and unplug electronics when not in use.\n\nThese small steps, when multiplied by millions of people, create a massive positive impact on our planet."
+    },
+    {
+      "id": 5,
+      "title": "Understanding AI Models",
+      "category": [
+        "TECH",
+        "AI"
+      ],
+      "description": "A beginner's guide to Large Language Models (LLMs) and how they are reshaping technology.",
+      "date": "2026-01-15T10:00:00.000Z",
+      "coverImage": "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
+      "content": "Artificial Intelligence has taken a giant leap forward with the advent of Large Language Models (LLMs). But what exactly are they?\n\nAt their core, LLMs are deep learning algorithms that can recognize, summarize, translate, predict, and generate text and other content based on knowledge gained from massive datasets.\n\nFrom coding assistants to creative writing partners, these tools are augmenting human intelligence rather than replacing it. The future belongs to those who learn to collaborate effectively with these systems."
+    },
+    {
+      "id": 6,
+      "title": "Financial Freedom 101",
+      "category": [
+        "FINANCE"
+      ],
+      "description": "Basic principles of saving and investing for the long term to secure your financial future.",
+      "date": "2026-01-10T16:45:00.000Z",
+      "coverImage": "https://images.pexels.com/photos/1602726/pexels-photo-1602726.jpeg",
+      "content": "Financial freedom is not about being rich; it's about having control over your time. The formula is simple, though not always easy: Spend less than you earn and invest the difference.\n\n**The Power of Compound Interest**: Einstein called it the eighth wonder of the world. Starting early, even with small amounts, can lead to exponential growth over time.\n\n**Diversification**: Don't put all your eggs in one basket. A mix of stocks, bonds, and real estate can balance risk and reward."
+    }
+  ]
+}

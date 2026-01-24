@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Editorial Blog Design System */
+
+@layer base {
+  :root {
+    /* Warm slate palette with amber accent */
+    --background: 40 20% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 220 20% 15%;
+    --primary-foreground: 40 20% 98%;
+
+    --secondary: 40 15% 94%;
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 40 10% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 35 90% 55%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 35 90% 55%;
+
+    --radius: 0.75rem;
+
+    /* Category badge colors */
+    --badge-tech: 210 80% 55%;
+    --badge-finance: 145 60% 42%;
+    --badge-lifestyle: 320 70% 55%;
+    --badge-environment: 160 60% 40%;
+    --badge-productivity: 35 90% 55%;
+    --badge-career: 260 60% 55%;
+    --badge-ai: 200 80% 50%;
+    --badge-default: 220 15% 50%;
+
+    /* Sidebar */
+    --sidebar-background: 40 15% 96%;
+    --sidebar-foreground: 220 20% 25%;
+    --sidebar-primary: 220 20% 15%;
+    --sidebar-primary-foreground: 40 20% 98%;
+    --sidebar-accent: 40 15% 92%;
+    --sidebar-accent-foreground: 220 20% 15%;
+    --sidebar-border: 40 15% 88%;
+    --sidebar-ring: 35 90% 55%;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 40 15% 95%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 40 15% 95%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 40 15% 95%;
+
+    --primary: 40 15% 95%;
+    --primary-foreground: 220 20% 8%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 15% 90%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 35 85% 50%;
+    --accent-foreground: 220 20% 8%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 22%;
+    --input: 220 15% 22%;
+    --ring: 35 85% 50%;
+
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 40 15% 90%;
+    --sidebar-primary: 35 85% 50%;
+    --sidebar-primary-foreground: 220 20% 8%;
+    --sidebar-accent: 220 15% 16%;
+    --sidebar-accent-foreground: 40 15% 95%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 35 85% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .blog-card {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .blog-card:hover {
+    @apply shadow-lg -translate-y-0.5;
+  }
+
+  .category-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 text-xs font-medium rounded-full uppercase tracking-wider;
+  }
+
+  .prose-blog {
+    @apply leading-relaxed text-foreground/90;
+  }
+
+  .prose-blog p {
+    @apply mb-4;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.4s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.4s ease-out;
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: hsl(var(--muted));
+    border-radius: 3px;
+  }
+}
