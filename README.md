@@ -12,6 +12,7 @@ A modern, responsive blog application built with React, TypeScript, and Vite. Th
 - ⚡ **Real-time Updates**: Automatic data refetching and cache invalidation using TanStack Query.
 - 📱 **Responsive Design**: Optimized for various screen sizes using Tailwind CSS.
 
+
 ## Tech Stack
 
 - **Frontend Framework**: React 18 + Vite
